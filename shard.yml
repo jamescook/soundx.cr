@@ -1,0 +1,12 @@
+name: soundx
+version: 0.1.0
+
+authors:
+  - James Cook <jamescook_@fastmail.fm>
+
+description: |
+  Generate Soundex codes from a name
+
+crystal: 0.32.1
+
+license: MIT

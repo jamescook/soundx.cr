@@ -15,7 +15,9 @@ module Soundx
         end
 
         case string[i].upcase # a Char type
-        when 'H', 'W' # Special handling for H and W per archives.org
+        when 'H', 'W'
+          # If "H" or "W" separate two consonants that have the same soundex code,
+          # the consonant to the right of the vowel is not coded.
           skip_next_soundex_code = last_code
         when 'B', 'F', 'P', 'V'
           unless skip_next_soundex_code == 1

@@ -10,3 +10,7 @@ description: |
 crystal: 0.32.1
 
 license: MIT
+
+development_dependencies:
+  text:
+    git: https://github.com/johnjansen/text
